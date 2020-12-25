@@ -1,19 +1,19 @@
 <script>
   import Sveltree from "./Sveltree.svelte";
 
-  const leaves = [
+  const nodes = [
     {
       title: "My life",
-      leaves: [
+      nodes: [
         {
           title: "Justin Awrey",
-          leaves: [
+          nodes: [
             { title: "Is cool" },
             { title: "Is so cool" },
             { title: "supuer cool" },
             { title: "you dont even know" },
             { title: "Is cool2" },
-            { title: "Is so cool4", leaves: [{ title: "who knew" }] },
+            { title: "Is so cool4", nodes: [{ title: "who knew" }] },
             { title: "supuer cool9" },
             { title: "you dont even 9know" },
             { title: "Is coo1l" },
@@ -24,11 +24,11 @@
         },
         {
           title: "Paulina Buskas",
-          leaves: [{ title: "SUCKS", leaves: [{ title: "BIG TIME" }] }],
+          nodes: [{ title: "SUCKS", nodes: [{ title: "BIG TIME" }] }],
         },
       ],
     },
   ];
 </script>
 
-<Sveltree {leaves} />
+<Sveltree {nodes} />
